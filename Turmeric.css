@@ -1,0 +1,192 @@
+.product-page {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8efe5;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 8rem;
+  font-family: Batang;
+ 
+  margin-top: 7rem;
+  font-weight: 500;
+  
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.image-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-name {
+  font-size: 50px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-family: Batang;
+}
+
+
+
+.product-image {
+  width: 100%;
+  max-width: 720px;
+  border: 2px solid #ccc;
+  max-height: 800px;
+  margin-left: -60px; /* Pulls the name closer to the image */
+  
+    
+}
+
+.sale-badge {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: green;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: white;
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.info-section {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.product-name {
+font-size: 50px;
+margin-bottom: 0.5rem;
+margin-right: auto; /* Or a small value like 10px */
+font-weight: 500;
+}
+
+
+.price {
+  margin: 1rem 0;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 10px;
+}
+
+.sale-price {
+  font-size: 1.5rem;
+  color: #4a3f35;
+  font-weight: bold;
+}
+
+/* Tabs */
+.tab-section {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.tab-container {
+  display: flex;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 10px;
+  justify-content: left;
+}
+
+.tab {
+  padding: 16px 24px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-bottom: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: #2c2c2c;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  color: #ec835e;
+  border: 1px solid #bf91d8;
+  border-bottom: none;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-weight: bold;
+ 
+}
+
+.tab-content {
+  background-color: #f9efe8;
+  padding: 1rem;
+  border: 1px solid #bf91d8;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 20px;
+  
+  line-height: 1.8;
+ 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .image-info-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image {
+    margin: 0 auto; /* Center image horizontally */
+  }
+
+  .product-name {
+      text-align: left !important;
+      align-self: flex-start !important;
+      margin-left: 0rem; /* or adjust as needed */
+    }
+    
+
+  .info-section {
+    align-items: flex-start;
+    text-align: left;
+    text-align: left !important;
+      align-self: flex-start !important;
+      margin-left: 1rem; /* or adjust as needed */
+  }
+
+  .tab {
+    font-size: 1.5rem;
+    padding: 10px 16px;
+  }
+
+  .tab-content {
+    text-align: left;
+  }
+}
